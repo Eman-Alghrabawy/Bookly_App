@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_booky_1/constants.dart';
+import 'package:flutter_booky_1/core/utils/app_router.dart';
 import 'package:flutter_booky_1/core/utils/assets.dart';
-import 'package:flutter_booky_1/features/home/views/home_view.dart';
+// import 'package:flutter_booky_1/features/home/views/home_view.dart';
 import 'package:flutter_booky_1/features/splash/Presentation/views/widgets/sliding_text.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:get/get_navigation/get_navigation.dart';
+import 'package:go_router/go_router.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -21,10 +21,18 @@ class _SplashViewBodyState extends State<SplashViewBody>
   void initState() {
     super.initState();
     initSlidingAnimation();
-    Future.delayed(const Duration(seconds: 3), () {
-      Get.to(() => const HomeVIew(),
-          transition: Transition.fade, duration: kTransitionDuration);
-    });
+    navigateToHome();
+  }
+
+  void navigateToHome() {
+    Future.delayed(
+      const Duration(seconds: 2),
+      () {
+        // Get.to(() => const HomeVIew(),
+        //     transition: Transition.fade, duration: kTransitionDuration);
+        GoRouter.of(context).push(AppRouter.kHomeView);
+      },
+    );
   }
 
   @override
