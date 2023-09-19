@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_booky_1/features/home/views/widgets/custom_book_item.dart';
+import 'package:flutter_booky_1/features/home/presintation/views/widgets/custom_book_item.dart';
 
 class SimiliarBooksListView extends StatelessWidget {
   const SimiliarBooksListView({super.key});

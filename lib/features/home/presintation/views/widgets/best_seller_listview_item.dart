@@ -3,11 +3,11 @@ import 'package:flutter_booky_1/constants.dart';
 import 'package:flutter_booky_1/core/utils/app_router.dart';
 import 'package:flutter_booky_1/core/utils/assets.dart';
 import 'package:flutter_booky_1/core/utils/styles.dart';
-import 'package:flutter_booky_1/features/home/views/widgets/book_rating.dart';
+import 'package:flutter_booky_1/features/home/presintation/views/widgets/book_rating.dart';
 import 'package:go_router/go_router.dart';
 
-class BestSellerListViewItem extends StatelessWidget {
-  const BestSellerListViewItem({super.key});
+class BookListViewItem extends StatelessWidget {
+  const BookListViewItem({super.key});
 
   @override
   Widget build(BuildContext context) {

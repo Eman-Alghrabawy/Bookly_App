@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_booky_1/features/home/views/widgets/home_view_body.dart';
+import 'package:flutter_booky_1/features/home/presintation/views/widgets/home_view_body.dart';
 
 class HomeVIew extends StatelessWidget {
   const HomeVIew({super.key});

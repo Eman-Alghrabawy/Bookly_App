@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_booky_1/core/utils/styles.dart';
-import 'package:flutter_booky_1/features/home/views/widgets/best_seller_list_view.dart';
-import 'package:flutter_booky_1/features/home/views/widgets/custom_app_bar.dart';
-import 'package:flutter_booky_1/features/home/views/widgets/featured_list_view.dart';
+import 'package:flutter_booky_1/features/home/presintation/views/widgets/best_seller_list_view.dart';
+import 'package:flutter_booky_1/features/home/presintation/views/widgets/custom_app_bar.dart';
+import 'package:flutter_booky_1/features/home/presintation/views/widgets/featured_list_view.dart';
 
 class HOmeViewBody extends StatelessWidget {
   const HOmeViewBody({super.key});
